@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import * as Characters from '../../ImageArray';
 import { shuffleArray, CharacterData } from '../../utility';
 
@@ -6,7 +6,7 @@ import { shuffleArray, CharacterData } from '../../utility';
 export default function Main() {
     const [currScore, setCurrScore] = useState(0);
     const [maxScore, setMaxScore] = useState(0);
-    const [layout, setLayout] = useState([]);
+    const [layout, setLayout] = useState<CharacterData[]>([]);
     const [guess, setGuess] = useState<string[]>([]); // setGuess(prevState => [...prevState, newElement]);
 
     // use effect hook for shuffling charaters in setLayout array... do this to have useeffect only go off once => |After the callback function put []. So you’ll have something like useEffect(() => {// some code here}, [])
@@ -14,11 +14,11 @@ export default function Main() {
     // have an array in here that gets populated and  shuffled by the shuffle function on the use effect and onCLickm have this same array be used for concatting it onto the setGuess hook
     //check that by having a function that takes the character name and checks the array for the index with that name and whens its found concat it onto set guess, not only that
 
+    useEffect(() => {
+        let charArr:CharacterData[] = Characters.Characters;
+        setLayout(shuffleArray(charArr));
+    }, []);
 
-    const checkIfShitWorks = () => {
-        setGuess(prevState => [...prevState, 'Mario', 'Luigi']);
-        checkIfValidGuess("Luigi")
-    }
 
 
     const checkIfValidGuess = (charName:string) => {
@@ -37,6 +37,6 @@ export default function Main() {
         setGuess([]);
     }
   return (
-    <div><button onClick={() => checkIfShitWorks()}>check</button></div>
+    <div><button>check</button></div>
   )
 }
