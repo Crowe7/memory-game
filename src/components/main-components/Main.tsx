@@ -14,7 +14,10 @@ export default function Main() {
     // have an array in here that gets populated and  shuffled by the shuffle function on the use effect and onCLickm have this same array be used for concatting it onto the setGuess hook
     //check that by having a function that takes the character name and checks the array for the index with that name and whens its found concat it onto set guess, not only that
 
-
+    const resetGame = () => {
+        setCurrScore(0);
+        setGuess([]);
+    }
   return (
     <div>Main</div>
   )
