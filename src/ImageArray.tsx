@@ -23,9 +23,11 @@ import Samus from './images/Samus.png'
 import Sheik from './images/Sheik.png'
 import Yoshi from './images/Yoshi.png'
 import YoungLink from './images/YoungLink.png'
+
+import { CharacterData } from './utility'
 /* HOW DO I IMPORT BETTER ????????? */
 
- export const Characters = [
+ export const Characters:CharacterData[] = [
     {url: Mario, Name: "Mario"},
     {url: Luigi, Name: "Luigi"},
     {url: DrMario, Name: "Dr Mario"},
