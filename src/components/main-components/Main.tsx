@@ -19,12 +19,27 @@ export default function Main() {
         setLayout(shuffleArray(charArr));
     }, []);
 
+    const handleClick = (e:any) => {
+        if(checkIfValidGuess(e.target.name) === false) {
+            resetGame();
+        } else {
+            setCurrScore(currScore + 1);
+            if(maxScore < currScore) {
+                setMaxScore(currScore);
+            }
+            addGuess(e.target.name);
+            let charArr:CharacterData[] = layout;
+            setLayout(shuffleArray(charArr));
+        }
+    }
 
+    const addGuess = (charName:string) => {
+        // TODO ADD FUNCTIONALITY
+    }
 
     const checkIfValidGuess = (charName:string) => {
         guess.forEach(index => {
             if(index === charName) {
-                resetGame()
                 return false
             }
         })
