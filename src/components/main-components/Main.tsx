@@ -34,7 +34,7 @@ export default function Main() {
     }
 
     const addGuess = (charName:string) => {
-        // TODO ADD FUNCTIONALITY
+        setGuess(prevState => [...prevState, charName]);
     }
 
     const checkIfValidGuess = (charName:string) => {
