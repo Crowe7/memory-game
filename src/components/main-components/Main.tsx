@@ -63,7 +63,7 @@ export default function Main() {
         setGuess([]);
     }
   return (
-    <Box sx={{display: "flex", border: 1, justifyContent: "center", width: "1000px", height: "300px",}}>
+    <Box sx={{display: "flex", justifyContent: "center", width: "1000px", height: "300px",}}>
         <CharCards layout={layout} handleClick={handleClick}/>
     </Box>
   )

@@ -34,7 +34,7 @@ import { CharacterData } from './utility'
     {url: Bowser, Name: "Bowser"},
     {url: DonkeyKong, Name: "Donkey Kong"}, 
     {url: Falco, Name: "Falco"},
-    {url: Falcon, Name: "Falcon"},
+    {url: Falcon, Name: "C Falcon"},
     {url: Fox, Name: "Fox"},
     {url: Ganondorf, Name: "Ganondorf"},
     {url: IceClimbers, Name: "Ice Climbers"},

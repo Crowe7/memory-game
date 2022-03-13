@@ -20,14 +20,14 @@ type MyProps = {
         {layout.map((info) =>  {
                 return <Box key={`${info.Name}`}>
                     <Card sx={{minWidth:"110px", maxWidth: "110px", border: "2px solid #a4a4a4"}} onClick={handleClick}>
-                        <CardActionArea>
+                        <CardActionArea disableRipple>
                             <CardMedia sx={{backgroundColor: "rgba(74,95,121,255)"}}
                             component="img"
                             alt= {`${info.Name}`}
                             height="100px"
                             image= {`${info.url}`}
                             />
-                            <CardContent sx={{padding: 0, textAlign: "center", backgroundColor: "#220000", color: "#b1adad", fontSize:"8px" }}>
+                            <CardContent sx={{padding: 0, textAlign: "center", backgroundColor: "#220000", color: "#b1adad", fontSize:"8px", }}>
                                 <h2>{`${info.Name}`}</h2>
                             </CardContent>
                         </CardActionArea>
