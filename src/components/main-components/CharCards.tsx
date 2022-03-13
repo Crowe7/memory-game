@@ -16,18 +16,18 @@ type MyProps = {
 
  export const CharCards = ({layout, handleClick}: MyProps) => {
   return (
-    <div>
+    <Box sx={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
         {layout.map((info) =>  {
                 return <Box key={`${info.Name}`}>
-                    <Card sx={{maxWidth: "150px"}} onClick={handleClick}>
+                    <Card sx={{minWidth:"110px", maxWidth: "110px", border: "2px solid #a4a4a4"}} onClick={handleClick}>
                         <CardActionArea>
-                            <CardMedia
+                            <CardMedia sx={{backgroundColor: "rgba(74,95,121,255)"}}
                             component="img"
                             alt= {`${info.Name}`}
-                            height="200px"
+                            height="100px"
                             image= {`${info.url}`}
                             />
-                            <CardContent>
+                            <CardContent sx={{padding: 0, textAlign: "center", backgroundColor: "#220000", color: "#b1adad", fontSize:"8px" }}>
                                 <h2>{`${info.Name}`}</h2>
                             </CardContent>
                         </CardActionArea>
@@ -35,6 +35,6 @@ type MyProps = {
                 </Box>
             })
         }
-    </div>
+    </Box>
   )
 }

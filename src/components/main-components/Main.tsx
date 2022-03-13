@@ -1,3 +1,5 @@
+import { Box } from '@mui/material';
+import { wrap } from 'module';
 import React, {useEffect, useState} from 'react';
 import * as Characters from '../../ImageArray';
 import { shuffleArray, CharacterData } from '../../utility';
@@ -33,7 +35,7 @@ export default function Main() {
             }
             resetGame();
         } else {
-            setCurrScore(currScore + 1);
+            setCurrScore(currScore + 1); // could do this with use effect hook to reflect the change
             if(maxScore < currScore + 1) {
                 setMaxScore(currScore + 1);
             }
@@ -55,11 +57,14 @@ export default function Main() {
 
     }
 
+
     const resetGame = () => {
         setCurrScore(0);
         setGuess([]);
     }
   return (
-    <CharCards layout={layout} handleClick={handleClick}/>
+    <Box sx={{display: "flex", border: 1, justifyContent: "center", width: "1000px", height: "300px",}}>
+        <CharCards layout={layout} handleClick={handleClick}/>
+    </Box>
   )
 }
