@@ -28,11 +28,14 @@ export default function Main() {
         }
 
         if(checkIfValidGuess(name) === false) {
+            if(maxScore < currScore) {
+                setMaxScore(currScore);
+            }
             resetGame();
         } else {
             setCurrScore(currScore + 1);
-            if(maxScore < currScore) {
-                setMaxScore(currScore);
+            if(maxScore < currScore + 1) {
+                setMaxScore(currScore + 1);
             }
             addGuess(name);
             let charArr:CharacterData[] = layout;
@@ -44,7 +47,6 @@ export default function Main() {
     }
     const checkIfValidGuess = (charName:string) => {
         for (let index of guess) {
-            console.log(index);
             if(index === charName) {
                 return false
             }
