@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
-import { wrap } from 'module';
 import React, {useEffect, useState} from 'react';
 import * as Characters from '../../ImageArray';
 import { shuffleArray, CharacterData } from '../../utility';
 import { CharCards } from './CharCards';
+import { ScoreBoard } from './ScoreBoard';
 
 export default function Main() {
     const [currScore, setCurrScore] = useState(0);
@@ -57,14 +57,16 @@ export default function Main() {
 
     }
 
-
     const resetGame = () => {
         setCurrScore(0);
         setGuess([]);
     }
   return (
-    <Box sx={{display: "flex", justifyContent: "center", width: "1000px", height: "300px",}}>
-        <CharCards layout={layout} handleClick={handleClick}/>
+    <Box sx={{display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <ScoreBoard maxScore={maxScore} currScore={currScore}/>
+        <Box sx={{display: "flex", justifyContent: "center", width: "1000px", height: "300px",}}>
+            <CharCards layout={layout} handleClick={handleClick}/>
+        </Box>
     </Box>
   )
 }

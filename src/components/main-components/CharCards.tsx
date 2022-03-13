@@ -6,7 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-
+import Typography from '@mui/material/Typography';
 
 type MyProps = {
     layout: CharacterData[],
@@ -24,11 +24,11 @@ type MyProps = {
                             <CardMedia sx={{backgroundColor: "rgba(74,95,121,255)"}}
                             component="img"
                             alt= {`${info.Name}`}
-                            height="100px"
+                            height="110px"
                             image= {`${info.url}`}
                             />
-                            <CardContent sx={{padding: 0, textAlign: "center", backgroundColor: "#220000", color: "#b1adad", fontSize:"8px", }}>
-                                <h2>{`${info.Name}`}</h2>
+                            <CardContent sx={{display: "flex", justifyContent: "center", alignItems: "center", padding: 0, backgroundColor: "#220000", color: "#b1adad", height: "43px" }}>
+                                <Typography component="h2"> <Box sx={{textTransform: "uppercase", fontWeight:"bold", fontSize:"16px", textAlign: "center"}}> {`${info.Name}`}</Box> </Typography>
                             </CardContent>
                         </CardActionArea>
                     </Card>
