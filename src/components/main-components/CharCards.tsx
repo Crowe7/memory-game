@@ -18,12 +18,12 @@ type MyProps = {
   return (
     <div>
         {layout.map((info) =>  {
-                return <Box>
-                    <Card sx={{maxWidth: "150px"}}>
+                return <Box key={`${info.Name}`}>
+                    <Card sx={{maxWidth: "150px"}} onClick={handleClick}>
                         <CardActionArea>
                             <CardMedia
                             component="img"
-                            alt= "Super Smash Brothers Character"
+                            alt= {`${info.Name}`}
                             height="200px"
                             image= {`${info.url}`}
                             />

@@ -20,29 +20,35 @@ export default function Main() {
     }, []);
 
     const handleClick = (e:any) => {
-        if(checkIfValidGuess(e.target.name) === false) {
+        let name:string = '';
+        if(e.target.alt === undefined) {
+            name = e.target.innerText;
+        } else {
+            name = e.target.alt;
+        }
+
+        if(checkIfValidGuess(name) === false) {
             resetGame();
         } else {
             setCurrScore(currScore + 1);
             if(maxScore < currScore) {
                 setMaxScore(currScore);
             }
-            addGuess(e.target.name);
+            addGuess(name);
             let charArr:CharacterData[] = layout;
             setLayout(shuffleArray(charArr));
         }
     }
-
     const addGuess = (charName:string) => {
         setGuess(prevState => [...prevState, charName]);
     }
-
     const checkIfValidGuess = (charName:string) => {
-        guess.forEach(index => {
+        for (let index of guess) {
+            console.log(index);
             if(index === charName) {
                 return false
             }
-        })
+        }
         return true
 
     }
