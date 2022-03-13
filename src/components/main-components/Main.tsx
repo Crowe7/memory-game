@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import * as Characters from '../../ImageArray';
 import { shuffleArray, CharacterData } from '../../utility';
-
+import { CharCards } from './CharCards';
 
 export default function Main() {
     const [currScore, setCurrScore] = useState(0);
@@ -52,6 +52,6 @@ export default function Main() {
         setGuess([]);
     }
   return (
-    <div><button>check</button></div>
+    <CharCards layout={layout} handleClick={handleClick}/>
   )
 }
