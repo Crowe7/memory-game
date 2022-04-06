@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.223675a5.css",
+    "main.js": "/memory-game/static/js/main.00ffc3be.js",
+    "static/js/787.69b12325.chunk.js": "/memory-game/static/js/787.69b12325.chunk.js",
+    "static/media/Bowser.png": "/memory-game/static/media/Bowser.2f2ab88842a5da57a6b1.png",
+    "static/media/Ganondorf.png": "/memory-game/static/media/Ganondorf.129f16d19304793cc80a.png",
+    "static/media/IceClimbers.png": "/memory-game/static/media/IceClimbers.9472ee2e095b59cb8bb5.png",
+    "static/media/DonkeyKong.png": "/memory-game/static/media/DonkeyKong.cbf38d5825a377562778.png",
+    "static/media/Falco.png": "/memory-game/static/media/Falco.8190190f84515c6bd341.png",
+    "static/media/Mario.png": "/memory-game/static/media/Mario.ec02cc8b6112fcb5cfe2.png",
+    "static/media/Roy.png": "/memory-game/static/media/Roy.bb62605fbbccc9412f66.png",
+    "static/media/Link.png": "/memory-game/static/media/Link.5dbb2c05fc0f15afbcbb.png",
+    "static/media/Peach.png": "/memory-game/static/media/Peach.173a5f550cd1d1b9e083.png",
+    "static/media/Fox.png": "/memory-game/static/media/Fox.851c077e2976712e3539.png",
+    "static/media/Luigi.png": "/memory-game/static/media/Luigi.487fbe691d47e9bcba11.png",
+    "static/media/Marth.png": "/memory-game/static/media/Marth.97251bd1bb314bffe7ef.png",
+    "static/media/YoungLink.png": "/memory-game/static/media/YoungLink.9e34a8201af5ca9e38f8.png",
+    "static/media/Falcon.png": "/memory-game/static/media/Falcon.e6acce0c5206c2c25087.png",
+    "static/media/Sheik.png": "/memory-game/static/media/Sheik.1cd7d87047c09d796a3a.png",
+    "static/media/DrMario.png": "/memory-game/static/media/DrMario.f7725574a14f8db06124.png",
+    "static/media/Yoshi.png": "/memory-game/static/media/Yoshi.c2e213ef7c0ff137d2dd.png",
+    "static/media/Samus.png": "/memory-game/static/media/Samus.12da60c0b1b4b85823bf.png",
+    "static/media/Mewtwo.png": "/memory-game/static/media/Mewtwo.679c1c27247bf55b4cbc.png",
+    "static/media/Ness.png": "/memory-game/static/media/Ness.4f01f44f376d2085174e.png",
+    "static/media/Jigglypuff.png": "/memory-game/static/media/Jigglypuff.6487fa2873d9d8593389.png",
+    "static/media/Pikachu.png": "/memory-game/static/media/Pikachu.705e6743824d0253e7e4.png",
+    "static/media/Pichu.png": "/memory-game/static/media/Pichu.800f3a2a8957552c186d.png",
+    "static/media/Kirby.png": "/memory-game/static/media/Kirby.768d7a58051566a226ce.png",
+    "static/media/MrGameAndWatch.png": "/memory-game/static/media/MrGameAndWatch.586176f08876aae4789a.png",
+    "index.html": "/memory-game/index.html",
+    "main.223675a5.css.map": "/memory-game/static/css/main.223675a5.css.map",
+    "main.00ffc3be.js.map": "/memory-game/static/js/main.00ffc3be.js.map",
+    "787.69b12325.chunk.js.map": "/memory-game/static/js/787.69b12325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.223675a5.css",
+    "static/js/main.00ffc3be.js"
+  ]
+}
