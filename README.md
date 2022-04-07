@@ -4,7 +4,7 @@ Fun Smash Brothers memory game make to learn React Hooks
 > [Live Demo](https://crowe7.github.io/memory-game/)
 ## Screenshots 
 #### Gameplay
-![Gameplay](/screenshots/Gameplay.gif)
+![Gameplay](/src/screenshots/Gameplay.gif)
 
 
 ## Built with
